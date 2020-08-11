@@ -1,0 +1,23 @@
+-mjwx
+-i obj/starfield-asm.ihx
+-b _CODE = 0x0040
+-b _DATA = 0x0000
+-u
+-k /Users/david/Documents/retro/proyectos/cpctelera/cpctelera/tools/sdcc-3.6.8-r9946/bin/../share/sdcc/lib/z80
+-k /usr/local/Cellar/sdcc/4.0.0/share/sdcc/lib/z80
+-l /Users/david/Documents/retro/proyectos/cpctelera/cpctelera/cpctelera.lib
+-l z80
+obj/cpct_functions.h.rel
+obj/main.rel
+obj/man/entities.h.rel
+obj/man/entities.rel
+obj/man/level.h.rel
+obj/man/level.rel
+obj/sys/generator.h.rel
+obj/sys/generator.rel
+obj/sys/physics.h.rel
+obj/sys/physics.rel
+obj/sys/render.h.rel
+obj/sys/render.rel
+
+-e

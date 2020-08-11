@@ -1,0 +1,1 @@
+.globl man_level_init

@@ -1,0 +1,99 @@
+ASxxxx Linker V03.00 + NoICE + sdld,  page 1.
+Hexadecimal  [32-Bits]
+
+Area                                    Addr        Size        Decimal Bytes (Attributes)
+--------------------------------        ----        ----        ------- ----- ------------
+.  .ABS.                            00000000    00000000 =           0. bytes (ABS,CON)
+
+      Value  Global                              Global Defined In Module
+      -----  --------------------------------   ------------------------
+     00000000  .__.ABS.                           cpct_video
+     00000000  l__DATA                         
+     00000040  s__CODE                         
+     000002A6  l__CODE                         
+     000002E6  s__DATA                         
+
+ASxxxx Linker V03.00 + NoICE + sdld,  page 2.
+Hexadecimal  [32-Bits]
+
+Area                                    Addr        Size        Decimal Bytes (Attributes)
+--------------------------------        ----        ----        ------- ----- ------------
+_CODE                               00000040    000002A6 =         678. bytes (REL,CON)
+
+      Value  Global                              Global Defined In Module
+      -----  --------------------------------   ------------------------
+     00000062  _main                              cpct_keyboard
+     00000069  entities                           cpct_keyboard
+     000000BB  man_entity_init                    cpct_keyboard
+     000000C4  man_entity_create                  cpct_keyboard
+     000000D3  man_entity_set4destruction         cpct_keyboard
+     000000DC  man_entity_destroy                 cpct_keyboard
+     000000FF  man_entity_forall                  cpct_keyboard
+     00000116  man_entity_update                  cpct_keyboard
+     00000159  man_level_init                     
+     00000200  sys_generator_update               cpct_keyboard
+     00000203  sys_physics_update                 
+     00000222  sys_render_init                    cpct_keyboard
+     00000237  sys_render_update                  cpct_keyboard
+     00000262  cpct_setPalette_asm                cpct_video
+     00000275  cpct_setPALColour_asm              cpct_video
+     0000027F  _cpct_waitVSYNC                    cpct_video
+     0000027F  cpct_waitVSYNC_asm                 cpct_video
+     00000287  cpct_setVideoMode_asm              cpct_video
+     00000294  _cpct_getRandom_xsp40_u8           cpct_random
+     00000294  cpct_getRandom_xsp40_u8_asm        cpct_random
+     00000299  _cpct_seed1_xsp40_u8               cpct_random
+     0000029C  _cpct_seed2_xsp40_u8               cpct_random
+     000002B6  _cpct_seed3_xsp40_u8               cpct_random
+     000002B9  _cpct_disableFirmware              cpct_firmware
+     000002B9  _cpct_removeInterruptHandler       cpct_firmware
+     000002B9  cpct_disableFirmware_asm           cpct_firmware
+     000002B9  cpct_removeInterruptHandler_asm    cpct_firmware
+     000002C9  _cpct_mode_rom_status              cpct_firmware
+     000002CA  cpct_getScreenPtr_asm              cpct_video
+
+ASxxxx Linker V03.00 + NoICE + sdld,  page 3.
+
+Files Linked                              [ module(s) ]
+
+obj/cpct_functions.h.rel                  [  ]
+obj/main.rel                              [ cpct_keyboard ]
+obj/man/entities.h.rel                    [  ]
+obj/man/entities.rel                      [ cpct_keyboard ]
+obj/man/level.h.rel                       [  ]
+obj/man/level.rel                         [  ]
+obj/sys/generator.h.rel                   [  ]
+obj/sys/generator.rel                     [ cpct_keyboard ]
+obj/sys/physics.h.rel                     [  ]
+obj/sys/physics.rel                       [  ]
+obj/sys/render.h.rel                      [  ]
+obj/sys/render.rel                        [ cpct_keyboard ]
+
+
+Libraries Linked                          [ object file ]
+
+/Users/david/Documents/retro/proyectos/cpctelera/cpctelera/cpctelera.lib
+                                          [ cpct_setPalette_asmbindings.rel ]
+/Users/david/Documents/retro/proyectos/cpctelera/cpctelera/cpctelera.lib
+                                          [ cpct_setPALColour_asmbindings.re ]
+/Users/david/Documents/retro/proyectos/cpctelera/cpctelera/cpctelera.lib
+                                          [ cpct_waitVSYNC.rel ]
+/Users/david/Documents/retro/proyectos/cpctelera/cpctelera/cpctelera.lib
+                                          [ cpct_setVideoMode_asmbindings.re ]
+/Users/david/Documents/retro/proyectos/cpctelera/cpctelera/cpctelera.lib
+                                          [ cpct_getRandom_xsp40_u8.rel ]
+/Users/david/Documents/retro/proyectos/cpctelera/cpctelera/cpctelera.lib
+                                          [ cpct_removeInterruptHandler.rel ]
+/Users/david/Documents/retro/proyectos/cpctelera/cpctelera/cpctelera.lib
+                                          [ cpc_mode_rom_status.rel ]
+/Users/david/Documents/retro/proyectos/cpctelera/cpctelera/cpctelera.lib
+                                          [ cpct_getScreenPtr_asmbindings.re ]
+
+ASxxxx Linker V03.00 + NoICE + sdld,  page 4.
+
+User Base Address Definitions
+
+_CODE = 0x0040
+_DATA = 0x0000
+
+
