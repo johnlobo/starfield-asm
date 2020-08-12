@@ -5,21 +5,21 @@
 ;; DefineLevel Macro
 ;;
 .macro DefineLevel _level 
-    _level':
+    _level'::
 .endm
 
 ;;=================================================================================
 ;; EndLevel Macro
 ;;
 .macro EndLevel _level
-    _level'_end:
+    _level'_end::
 .endm
 
 ;;=================================================================================
 ;; DefEnt Macro
 ;;
 .macro DefEnt _X, _Y, _VX
-    .db _X', _Y', _VX
+    .db e_type_star, _X', _Y', _VX, e_color_default, 0x00, 0x00
 .endm
 
 
@@ -36,7 +36,7 @@ DefEnt 79, 90, -1
 EndLevel level_1
 
 DefineLevel level_2
-DefEnt 79, 20, -1
+DefEnt 79, 20, -4
 DefEnt 79, 40, -2
 DefEnt 79, 60, -2
 DefEnt 79, 80, -3

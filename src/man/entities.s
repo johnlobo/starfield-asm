@@ -5,8 +5,8 @@
 ;; Entity storage
 ;;
 entities::
-entities_1st_free:  .dw entities_storage
-entities_storage:   .ds max_entities * sizeof_e
+entities_1st_free::  .dw entities_storage
+entities_storage::   .ds max_entities * sizeof_e
 
 ;;
 ;; Initialize entity manager
@@ -101,7 +101,7 @@ _to_call = .+1
     ;; Point to the next entity and repeat
     ld bc, #sizeof_e
     add ix, bc
-    call _next_entity
+    jr _next_entity
 
 ;;
 ;; UPDATE ENTITY MANAGER

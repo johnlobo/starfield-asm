@@ -17,4 +17,4 @@ sys_physics_update::
     ret c   ;; Carry = XPrev > XNew = Valid X
 _invalid_x:
     jp man_entity_set4destruction
-    ;; ret
+    ret
